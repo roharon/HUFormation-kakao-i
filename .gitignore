@@ -616,3 +616,5 @@ MigrationBackup/
 
 # End of https://www.gitignore.io/api/git,django,windows,pycharm,visualstudio,visualstudiocode
 huformation_kakao_i/MY_SECRET_KEY.json
+huformation_kakao_i/MY_SECRET_KEY.json
+.vscode/settings.json
