@@ -1,7 +1,10 @@
 FROM ubuntu:18.04
 
 MAINTAINER roharon98@gmail.com
-RUN apt-get install python3 python3-pip
+RUN echo 'apt-get update'
+RUN apt-get update && apt-get install -y apt-transport-https
+RUN echo 'install python3 python3-pip'
+RUN apt-get install -y python3 python3-pip
 
 RUN pip install -r requirements.txt
 
