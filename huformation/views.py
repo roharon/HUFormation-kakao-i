@@ -1,26 +1,35 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+# Create your views here.
+def keyboard(request):
+    userRequest = JsonResponse(request)
+    #userRequest.content
 
-def show_test(request):
-    if request.method == "POST":
-      userRequest = request.data
-      userRequest = userRequest.body
-      print(userRequest)
-      return JsonResponse({
+    return JsonResponse({
   "version": "2.0",
   "context": {
-    "version": "2.0",
-    "template": {
-        "outputs": [
-            {
-                "simpleText": {
-                    "text": userRequest
-                }
-            }
-        ]
-    }
-}
+    "values": [
+      {
+        "name": "abc",
+        "lifeSpan": 10,
+        "params": {
+          "key1": "val1",
+          "key2": "val2"
+        }
+      },
+      {
+        "name": "def",
+        "lifeSpan": 5,
+        "params": {
+          "key3": "1",
+          "key4": "true",
+          "key5": "{\"jsonKey\": \"jsonVal\"}"
+        }
+      },
+      {
+        "name": "ghi",
+        "lifeSpan": 0
+      }
+    ]
+  }
 })
-
-    if request.method == "POST":
-      return JsonResponse({'status':200})
