@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y apt-transport-https
 RUN echo 'install python3 python3-pip'
 RUN apt-get install -y python3 python3-pip
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 EXPOSE 8000
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
