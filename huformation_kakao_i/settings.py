@@ -26,7 +26,7 @@ SECRET_KEY = json.loads(open('./huformation_kakao_i/MY_SECRET_KEY.json').read())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition

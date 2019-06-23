@@ -1,5 +1,6 @@
 from django.urls import path
-import views
+from huformation import views
+
 urlpatterns = [
-    path('^keyboard/',views.keyboard)
+    path('apiTest/', views.apiTest)
 ]
