@@ -619,3 +619,5 @@ huformation_kakao_i/MY_SECRET_KEY.json
 huformation_kakao_i/MY_SECRET_KEY.json
 .vscode/settings.json
 huformation_kakao_i/MY_SECRET_KEY.json
+*.xml
+*.iml
