@@ -2,4 +2,4 @@
 from .apiTest import *
 from .skill import *
 from .cafeteria import *
-from .lib import *
+from .library import *

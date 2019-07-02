@@ -4,4 +4,5 @@ from huformation import views
 urlpatterns = [
     path('apiTest/', views.apiTest),
     path('skill', views.skill)
+    
 ]
